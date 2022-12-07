@@ -8,6 +8,6 @@ class Application(
     }
 
     fun editPreferences() {
-        preferences = PreferencesView().showModal(preferences)
+        preferences = PreferencesView().showModal(preferences) // 불변 객체에 대한 가변 참조를 공유
     }
 }
